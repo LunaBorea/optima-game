@@ -1,8 +1,28 @@
 [gd_scene format=3 uid="uid://dnh8wp5yx8tk6"]
 
-[ext_resource type="PackedScene" uid="uid://of3upyki82gq" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://of3upyki82gq" path="res://scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://btxwfre67c08q" path="res://Assets/Images/optimalevel1.png" id="1_sugp2"]
+[ext_resource type="Texture2D" uid="uid://b31mtm5kqjam2" path="res://Assets/Images/optimalevel2.png" id="2_jyhfs"]
 
 [node name="Main" type="Node2D" unique_id=905948216]
 
+[node name="TextureRect1" type="TextureRect" parent="." unique_id=778576291]
+offset_left = -2200.0
+offset_top = 3675.0
+offset_right = 280.0
+offset_bottom = 7182.0
+rotation = -1.5707964
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("1_sugp2")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1425369749]
+offset_left = 2180.0002
+offset_top = -2562.0
+offset_right = 4660.0
+offset_bottom = 945.0
+rotation = -4.712389
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_jyhfs")
+
 [node name="Player" parent="." unique_id=81137539 instance=ExtResource("1_jjgbg")]
-position = Vector2(210, 113)
+position = Vector2(-233, 76)

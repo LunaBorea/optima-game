@@ -26,17 +26,18 @@ scale = Vector2(1.25, 1.25)
 texture = ExtResource("2_jyhfs")
 
 [node name="Player" parent="." unique_id=81137539 instance=ExtResource("1_jjgbg")]
-position = Vector2(1602, -669)
+position = Vector2(-233, 76)
 
 [node name="LevelInteract1" parent="." unique_id=1384971656 instance=ExtResource("4_jjvhh")]
-position = Vector2(1848, -780)
+position = Vector2(-924, -665)
 
-[node name="Target" type="Node2D" parent="LevelInteract1" unique_id=924056822]
-position = Vector2(-248, 3188)
+[node name="LevelInteract2" parent="." unique_id=1554705572 instance=ExtResource("4_jjvhh")]
+position = Vector2(1853, -781)
 
-[node name="LevelInteract2" parent="." unique_id=1046239742 instance=ExtResource("4_jjvhh")]
-position = Vector2(1638, 2408)
-rotation = 3.1415927
+[node name="LevelInteract3" parent="." unique_id=1450967858 instance=ExtResource("4_jjvhh")]
+position = Vector2(-1122, 2530)
+rotation = -3.1415927
 
-[node name="Target" type="Node2D" parent="LevelInteract2" unique_id=2074892916]
-position = Vector2(-246.99977, 3187)
+[node name="LevelInteract4" parent="." unique_id=103377940 instance=ExtResource("4_jjvhh")]
+position = Vector2(1642, 2408)
+rotation = -3.1415927

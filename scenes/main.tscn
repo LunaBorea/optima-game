@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://b31mtm5kqjam2" path="res://Assets/Images/optimalevel2.png" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://dttvttcubr8pi" path="res://Scenes/level_interact.tscn" id="4_jjvhh"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjvhh"]
+size = Vector2(474, 12)
+
 [node name="Main" type="Node2D" unique_id=905948216]
 
 [node name="TextureRect1" type="TextureRect" parent="." unique_id=778576291]
@@ -40,3 +43,10 @@ rotation = 3.1415927
 
 [node name="Target" type="Node2D" parent="LevelInteract2" unique_id=2074892916]
 position = Vector2(-246.99977, 3187)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=541901307]
+position = Vector2(1378, -642)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=398897440]
+position = Vector2(-66, 4)
+shape = SubResource("RectangleShape2D_jjvhh")

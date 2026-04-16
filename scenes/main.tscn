@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://dnh8wp5yx8tk6"]
 
-[ext_resource type="PackedScene" uid="uid://of3upyki82gq" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://of3upyki82gq" path="res://scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="Texture2D" uid="uid://btxwfre67c08q" path="res://Assets/Images/optimalevel1.png" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://b31mtm5kqjam2" path="res://Assets/Images/optimalevel2.png" id="2_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://dttvttcubr8pi" path="res://Scenes/level_interact.tscn" id="4_jjvhh"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjvhh"]
-size = Vector2(474, 12)
+[ext_resource type="PackedScene" uid="uid://dttvttcubr8pi" path="res://scenes/level_interact.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node2D" unique_id=905948216]
 
@@ -39,14 +36,34 @@ position = Vector2(-248, 3188)
 
 [node name="LevelInteract2" parent="." unique_id=1046239742 instance=ExtResource("4_jjvhh")]
 position = Vector2(1638, 2408)
-rotation = 3.1415927
+rotation = -3.1415925
 
 [node name="Target" type="Node2D" parent="LevelInteract2" unique_id=2074892916]
 position = Vector2(-246.99977, 3187)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=541901307]
-position = Vector2(1378, -642)
+[node name="LevelInteract3" parent="." unique_id=292505575 instance=ExtResource("4_jjvhh")]
+position = Vector2(-917, -665)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=398897440]
-position = Vector2(-66, 4)
-shape = SubResource("RectangleShape2D_jjvhh")
+[node name="Target" type="Node2D" parent="LevelInteract3" unique_id=88015526]
+position = Vector2(-231, 3196)
+
+[node name="LevelInteract5" parent="." unique_id=1280637246 instance=ExtResource("4_jjvhh")]
+position = Vector2(-1104, 2530)
+rotation = -3.1415927
+
+[node name="Target" type="Node2D" parent="LevelInteract5" unique_id=1645001130]
+position = Vector2(-232.00024, 3195)
+
+[node name="LevelInteract6" parent="." unique_id=192057413 instance=ExtResource("4_jjvhh")]
+position = Vector2(-765.99994, 2774)
+rotation = -3.8924012
+
+[node name="Target" type="Node2D" parent="LevelInteract6" unique_id=645684982]
+position = Vector2(-2256.5461, 2242.4185)
+
+[node name="LevelInteract4" parent="." unique_id=1095821038 instance=ExtResource("4_jjvhh")]
+position = Vector2(-657.00006, -437.00006)
+rotation = 1.1352957
+
+[node name="Target" type="Node2D" parent="LevelInteract4" unique_id=1243130148]
+position = Vector2(2876.3232, 1479.5176)

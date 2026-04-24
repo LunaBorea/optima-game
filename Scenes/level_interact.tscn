@@ -4,17 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://dslvubm78hn3h" path="res://Assets/Sprites/arrow_spritesheet.png" id="2_ir7ym"]
 [ext_resource type="PackedScene" uid="uid://c1xunchd8e77p" path="res://Scenes/interactable.tscn" id="3_5g0jw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xvve"]
-size = Vector2(20, 69)
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_ec6l8"]
 radius = 36.013885
 
 [node name="LevelInteract" type="StaticBody2D" unique_id=1384971656]
 script = ExtResource("1_ir7ym")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1942785942]
-shape = SubResource("RectangleShape2D_5xvve")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=997192183]
 scale = Vector2(0.25, 0.25)

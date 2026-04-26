@@ -12,12 +12,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_tbgi4"]
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_tefeu"]
-font_color = Color(0, 0, 0, 1)
-
 [node name="Main" type="Node2D" unique_id=905948216]
 
 [node name="TextureRect1" type="TextureRect" parent="." unique_id=778576291]
@@ -1256,7 +1250,6 @@ scale = Vector2(10.123967, 33.519794)
 polygon = PackedVector2Array(0, 0, 4.5608063, 0, 4.5608063, 1.7201843, 0, 1.7201843)
 
 [node name="Player" parent="." unique_id=81137539 instance=ExtResource("1_jjgbg")]
-unique_name_in_owner = true
 position = Vector2(1751.7998, -1402)
 
 [node name="GameManager" type="Node2D" parent="." unique_id=237208092]
@@ -1326,24 +1319,18 @@ scale = Vector2(85.600006, 16.559992)
 shape = SubResource("RectangleShape2D_tefeu")
 debug_color = Color(0.65299875, 0.4161117, 0.80140746, 0.41960785)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=168602461]
+[node name="PointsLabel" type="Label" parent="GameManager" unique_id=1649063246]
+offset_right = 40.0
+offset_bottom = 23.0
 
-[node name="GoalLabel" type="Label" parent="CanvasLayer" unique_id=781493844]
-offset_left = 24.0
-offset_top = 11.0
-offset_right = 64.0
-offset_bottom = 34.0
-scale = Vector2(4, 4)
-text = "goal"
-label_settings = SubResource("LabelSettings_tbgi4")
-metadata/_edit_use_anchors_ = true
+[node name="GoalLabel" type="Label" parent="GameManager" unique_id=231705985]
+offset_right = 40.0
+offset_bottom = 23.0
 
-[node name="PointsLabel" type="Label" parent="CanvasLayer" unique_id=639639634]
-offset_left = 24.0
-offset_top = 103.0
-offset_right = 73.0
-offset_bottom = 126.0
-scale = Vector2(4, 4)
-text = "points"
-label_settings = SubResource("LabelSettings_tefeu")
-metadata/_edit_use_anchors_ = true
+[connection signal="body_entered" from="GameManager/Cafe" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/Matsal" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/Bil" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/IT" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/Artesan" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/Gym" to="GameManager" method="_on_goal_reach"]
+[connection signal="body_entered" from="GameManager/Metall" to="GameManager" method="_on_goal_reach"]

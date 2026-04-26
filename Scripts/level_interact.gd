@@ -4,14 +4,11 @@ extends StaticBody2D
 @onready var sprite_2d = $Sprite2D
 @onready var destination = $Target
 
-var player: CharacterBody2D
-
 func _ready():
-	player = get_tree().get_first_node_in_group("player")
 	interactable.interact = _on_interact
 
 func _on_interact():
-	player.global_position = destination.global_position
+	%Player.global_position = destination.global_position
 
 func _on_interactable_area_entered(_area):
 	sprite_2d.frame = 1

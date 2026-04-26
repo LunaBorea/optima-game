@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var interact_label = $InteractLabel
-var current_interactions := []
+var current_interactions: Array = []
 var can_interact := true
 
 func _input(event):
